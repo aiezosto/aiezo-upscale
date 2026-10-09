@@ -1,0 +1,298 @@
+/* =====================================================================
+   AIEZO Design System tokens — đồng bộ màu, chữ với APLMONT
+   (Be Vietnam Pro / Inter / Lexend Exa, xanh AIEZO #7EC151, nền #050706).
+   ===================================================================== */
+@import "tailwindcss";
+
+/* Font đóng gói kèm (SIL OFL 1.1, xem assets/fonts/*-OFL.txt) để chạy không cần mạng */
+@font-face { font-family: 'Be Vietnam Pro'; font-weight: 400; font-style: normal; font-display: swap; src: url('./assets/fonts/BeVietnamPro-Regular.ttf') format('truetype'); }
+@font-face { font-family: 'Be Vietnam Pro'; font-weight: 500; font-style: normal; font-display: swap; src: url('./assets/fonts/BeVietnamPro-Medium.ttf') format('truetype'); }
+@font-face { font-family: 'Be Vietnam Pro'; font-weight: 600; font-style: normal; font-display: swap; src: url('./assets/fonts/BeVietnamPro-SemiBold.ttf') format('truetype'); }
+@font-face { font-family: 'Be Vietnam Pro'; font-weight: 700; font-style: normal; font-display: swap; src: url('./assets/fonts/BeVietnamPro-Bold.ttf') format('truetype'); }
+@font-face { font-family: 'Be Vietnam Pro'; font-weight: 800 900; font-style: normal; font-display: swap; src: url('./assets/fonts/BeVietnamPro-ExtraBold.ttf') format('truetype'); }
+@font-face { font-family: 'Inter'; font-weight: 100 900; font-style: normal; font-display: swap; src: url('./assets/fonts/Inter-Variable.ttf') format('truetype'); }
+@font-face { font-family: 'Lexend Exa'; font-weight: 100 900; font-style: normal; font-display: swap; src: url('./assets/fonts/LexendExa-Variable.ttf') format('truetype'); }
+
+/* Giao diện sáng / tối bật bằng class `.dark` trên <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary-green: var(--accent);
+  --color-deep-forest: var(--aiezo-forest);
+  --color-emerald: var(--aiezo-emerald);
+  --color-background-main: var(--bg-canvas);
+  --color-surface: var(--bg-surface);
+  --color-elevated-surface: var(--bg-surface-elev);
+  --color-border-brand: var(--border-subtle);
+  --color-primary-text: var(--text-primary);
+  --color-body-text: var(--text-body);
+  --color-secondary-text: var(--text-secondary);
+  --color-muted-text: var(--text-muted);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-contrast: var(--accent-contrast);
+  --color-success: var(--color-success-token);
+  --color-warning: var(--color-warning-token);
+  --color-danger: var(--color-danger-token);
+  --color-info: var(--color-info-token);
+
+  --font-heading: 'Be Vietnam Pro', 'Inter', system-ui, sans-serif;
+  --font-body: 'Inter', 'Be Vietnam Pro', system-ui, sans-serif;
+  --font-accent: 'Lexend Exa', 'Be Vietnam Pro', system-ui, sans-serif;
+  --font-sans: 'Inter', 'Be Vietnam Pro', system-ui, sans-serif;
+  --font-mono: 'Cascadia Mono', Consolas, 'Courier New', monospace;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 16px;
+  --radius-2xl: 16px;
+  --radius-3xl: 24px;
+
+  --color-slate-50: #f5f7f5;
+  --color-slate-100: #edf1ee;
+  --color-slate-200: #d8e0db;
+  --color-slate-300: #bcc9c1;
+  --color-slate-400: #9aaea3;
+  --color-slate-500: #65756c;
+  --color-slate-600: #4a5a51;
+  --color-slate-700: #2c3f35;
+  --color-slate-800: #1c2922;
+  --color-slate-900: #101713;
+  --color-slate-950: #050706;
+
+  --color-emerald-50: #f1f8ec;
+  --color-emerald-100: #e2f1d5;
+  --color-emerald-200: #c6e4ac;
+  --color-emerald-300: #a6d47f;
+  --color-emerald-400: #8ed060;
+  --color-emerald-500: #7ec151;
+  --color-emerald-600: #267a4b;
+  --color-emerald-700: #1f6a40;
+  --color-emerald-800: #18563a;
+  --color-emerald-900: #12372a;
+  --color-emerald-950: #0a2219;
+
+  --color-blue-400: #6aa8ff;
+  --color-blue-500: #4d96ff;
+  --color-blue-600: #2563c9;
+
+  --color-amber-400: #eab24d;
+  --color-amber-500: #e5a93c;
+  --color-amber-600: #9c6a14;
+
+  --color-red-400: #e66f6f;
+  --color-red-500: #e05252;
+  --color-red-600: #c23a3a;
+}
+
+/* ---- Giao diện sáng ---- */
+:root {
+  --aiezo-green-500: #7ec151;
+  --aiezo-forest: #12372a;
+  --aiezo-emerald: #2e8b57;
+
+  --bg-canvas: #f4f7f4;
+  --bg-surface: #ffffff;
+  --bg-surface-elev: #f7faf7;
+  --border-subtle: #d8e0db;
+
+  --text-primary: #101713;
+  --text-body: #2c3f35;
+  --text-secondary: #4a5a51;
+  --text-muted: #65756c;
+
+  --accent: #7ec151;
+  --accent-strong: #267a4b;
+  --accent-contrast: #050706;
+
+  --color-success-token: #267a4b;
+  --color-warning-token: #9c6a14;
+  --color-danger-token: #c23a3a;
+  --color-info-token: #2563c9;
+
+  --viewer-bg: #e9eee9;
+  --sb-track: #edf1ee;
+  --sb-thumb: #bcc9c1;
+  --sb-thumb-hover: #65756c;
+  color-scheme: light;
+}
+
+/* ---- Giao diện tối (nền AIEZO) ---- */
+.dark {
+  --bg-canvas: #050706;
+  --bg-surface: #101713;
+  --bg-surface-elev: #141d18;
+  --border-subtle: #1c2922;
+
+  --text-primary: #f3f6f2;
+  --text-body: #d8e0db;
+  --text-secondary: #9aaea3;
+  --text-muted: #7a8b81;
+
+  --accent: #7ec151;
+  --accent-strong: #8ed060;
+  --accent-contrast: #050706;
+
+  --color-success-token: #2e8b57;
+  --color-warning-token: #e5a93c;
+  --color-danger-token: #e05252;
+  --color-info-token: #4d96ff;
+
+  --viewer-bg: #0a0f0c;
+  --sb-track: #101713;
+  --sb-thumb: #1c2922;
+  --sb-thumb-hover: #65756c;
+  color-scheme: dark;
+}
+
+@layer base {
+  html, body {
+    background-color: var(--bg-canvas);
+    color: var(--text-body);
+    height: 100%;
+  }
+  body {
+    font-family: var(--font-body);
+    margin: 0;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+  }
+  #root { height: 100%; }
+  input::placeholder, textarea::placeholder {
+    color: var(--text-muted);
+    opacity: 0.75;
+    font-weight: 400;
+    font-style: italic;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+  }
+  :focus-visible {
+    outline: 2px solid var(--accent) !important;
+    outline-offset: 2px !important;
+  }
+  button:disabled, [aria-disabled="true"] { cursor: not-allowed; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@layer components {
+  .aiezo-btn-primary, .aiezo-btn-secondary, .aiezo-btn-ghost, .aiezo-btn-danger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+    min-height: 36px;
+    padding: 0 1rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    cursor: pointer;
+    transition-property: background-color, border-color, color, transform, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .aiezo-btn-primary:hover:not(:disabled),
+  .aiezo-btn-secondary:hover:not(:disabled),
+  .aiezo-btn-danger:hover:not(:disabled) { transform: translateY(-1px); }
+  .aiezo-btn-primary:active:not(:disabled),
+  .aiezo-btn-secondary:active:not(:disabled),
+  .aiezo-btn-ghost:active:not(:disabled),
+  .aiezo-btn-danger:active:not(:disabled) { transform: scale(0.98); }
+  .aiezo-btn-primary:disabled, .aiezo-btn-secondary:disabled,
+  .aiezo-btn-ghost:disabled, .aiezo-btn-danger:disabled { opacity: 0.5; pointer-events: none; }
+
+  .aiezo-btn-primary {
+    background-color: var(--accent);
+    color: var(--accent-contrast);
+    border: 1px solid transparent;
+    box-shadow: 0 0 35px rgba(126, 193, 81, 0.12);
+  }
+  .aiezo-btn-primary:hover:not(:disabled) {
+    background-color: #8ed060;
+    box-shadow: 0 0 50px rgba(126, 193, 81, 0.22);
+  }
+  .aiezo-btn-secondary {
+    background-color: var(--bg-surface);
+    color: var(--text-primary);
+    border: 1px solid var(--border-subtle);
+  }
+  .aiezo-btn-secondary:hover:not(:disabled) { border-color: rgba(126, 193, 81, 0.4); }
+  .aiezo-btn-ghost {
+    background-color: transparent;
+    color: var(--text-secondary);
+    border: 1px solid transparent;
+  }
+  .aiezo-btn-ghost:hover:not(:disabled) {
+    color: var(--accent-strong);
+    background-color: rgba(126, 193, 81, 0.06);
+  }
+  .aiezo-btn-danger {
+    background-color: transparent;
+    color: var(--color-danger-token);
+    border: 1px solid var(--color-danger-token);
+  }
+  .aiezo-btn-danger:hover:not(:disabled) { background-color: rgba(224, 82, 82, 0.08); }
+
+  .aiezo-wide-title {
+    font-family: var(--font-accent);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+  .glass-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+  }
+  .field {
+    width: 100%;
+    min-height: 36px;
+    padding: 0 0.75rem;
+    border-radius: 10px;
+    border: 1px solid var(--border-subtle);
+    background: var(--bg-surface-elev);
+    color: var(--text-primary);
+    font-size: 0.8125rem;
+  }
+  .field:focus { border-color: var(--accent); outline: none; }
+
+  /* Thanh trượt AIEZO */
+  .aiezo-range {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 9999px;
+    background: linear-gradient(to right, var(--accent) 0%, var(--accent) var(--pct, 50%), var(--border-subtle) var(--pct, 50%));
+    cursor: pointer;
+  }
+  .aiezo-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 9999px;
+    background: var(--bg-surface);
+    border: 3px solid var(--accent);
+    box-shadow: 0 0 0 4px rgba(126, 193, 81, 0.12);
+  }
+
+  .checker {
+    background-color: var(--viewer-bg);
+  }
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--sb-track); }
+::-webkit-scrollbar-thumb { background: var(--sb-thumb); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--sb-thumb-hover); }

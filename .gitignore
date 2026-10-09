@@ -1,0 +1,19 @@
+# Môi trường & bản build
+.venv/
+build/
+dist/
+Setup/
+__pycache__/
+*.pyc
+frontend/node_modules/
+frontend/dist/
+
+# File model (tải bằng download_models.py, ~9 GB)
+models/**/*.pth
+models/**/*.safetensors
+models/**/*.gguf
+models/**/.validation_cache.json
+
+# Ảnh thử / dữ liệu riêng
+docs/
+*.log

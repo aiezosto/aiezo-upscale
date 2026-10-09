@@ -1,0 +1,11 @@
+# PyTorch bản CUDA 12.8 (cài riêng, trước các gói còn lại):
+#   pip install torch==2.11.0 torchvision==0.26.0 --index-url https://download.pytorch.org/whl/cu128
+spandrel==0.4.2
+pillow==12.3.0
+numpy==2.5.3
+pywebview==6.2.1
+google-genai==2.29.0
+httpx
+# SeedVR2: xem thêm engines/seedvr2/requirements.txt (diffusers, omegaconf, rotary_embedding_torch, gguf, opencv-python...)
+# Chỉ cần khi đóng gói EXE
+pyinstaller==6.22.3

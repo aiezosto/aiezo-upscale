@@ -1,0 +1,29 @@
+AIEZO UpScale — Làm nét & phóng to ảnh lên 2K / 4K / 8K bằng AI (miễn phí, mã nguồn mở)
+=======================================================================================
+
+CÀI ĐẶT
+1. Tải về ĐỦ TẤT CẢ các file AIEZO_UpScale_Setup.part*.exe / .rar và để chung MỘT thư mục.
+   Thiếu 1 file là không cài được.
+2. Bấm đúp vào file  AIEZO_UpScale_Setup.part1.exe  →  bấm "Cài đặt".
+   Nếu Windows hiện "Windows protected your PC": bấm "More info" → "Run anyway".
+3. Cài xong, mở app bằng biểu tượng "AIEZO UpScale" ngoài màn hình (hoặc trong menu Start → AIEZO).
+   Nơi cài: %LOCALAPPDATA%\Programs\AIEZO UpScale
+
+YÊU CẦU MÁY
+- Windows 10 / 11 bản 64-bit.
+- Card đồ hoạ NVIDIA, khuyên dùng 8–12 GB VRAM trở lên, driver NVIDIA bản mới (2025 trở về sau).
+  Đã thử trên RTX 3060 12 GB: ảnh 4K mất khoảng 1 phút.
+  Máy không có card NVIDIA: chỉ dùng được chế độ "Cổ điển" (rất chậm) hoặc "SeedVR2 API" (trả phí, cần mạng).
+- Ổ đĩa trống khoảng 14 GB.
+
+SỬ DỤNG (miễn phí hoàn toàn, không cần tài khoản)
+- Kéo thả ảnh vào cửa sổ → chọn 2K / 4K / 8K → "Làm nét & phóng to" → "Lưu ảnh".
+  Ảnh lưu ở thư mục Ảnh (Pictures)\AIEZO UpScale.
+- Tab "Hàng loạt": kéo cả thư mục ảnh vào, app tự làm và tự lưu.
+
+GỠ CÀI ĐẶT
+- Xoá thư mục %LOCALAPPDATA%\Programs\AIEZO UpScale và biểu tượng ngoài màn hình.
+- Cài đặt của app nằm ở %APPDATA%\AIEZO UpScale (có thể xoá).
+
+Mã nguồn mở. Góp ý / báo lỗi: trang GitHub của dự án (mục Issues), kèm file %APPDATA%\AIEZO UpScale\upscale.log.
+Một sản phẩm của AIEZO — https://aiezo.netlify.app

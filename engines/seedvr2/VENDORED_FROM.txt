@@ -1,0 +1,1 @@
+﻿commit 4490bd1f482e026674543386bb2a4d176da245b9 (2025-12-24) https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler - Apache-2.0
