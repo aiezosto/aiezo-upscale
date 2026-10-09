@@ -1,6 +1,6 @@
 """SeedVR2 (ByteDance Seed, Apache-2.0): khôi phục + phóng ảnh bằng diffusion một bước, chạy trên GPU của máy.
 
-Cùng loại mô hình trang upscale.aicomplex.vn dùng ("SEEDVR2: ổn định nhất, không sai detail").
+Diffusion một bước: tăng chi tiết mà giữ nguyên người, vật, bố cục.
 Chạy bằng CLI của bản ComfyUI-SeedVR2_VideoUpscaler (engines/seedvr2) trong một tiến trình con:
 VRAM được trả lại ngay khi xong, huỷ được bằng cách dừng tiến trình.
 """

@@ -146,7 +146,7 @@ export function SettingsPanel({ info, st, set, image, batch, busy, hasResult, on
                 </button>
               ))}
               <p className="text-[11px] text-muted-text leading-snug pt-1">
-                SeedVR2 (ByteDance) — cùng loại mô hình AIComplex dùng: tăng chi tiết mà giữ nguyên người, vật, bố cục.
+                SeedVR2 (ByteDance Seed) — mô hình diffusion một bước: tăng chi tiết mà giữ nguyên người, vật, bố cục.
                 Chi tiết nhỏ (sợi tóc, vân vải) do AI tái tạo, có thể không giống hệt thực tế.
               </p>
               {overGpu && (

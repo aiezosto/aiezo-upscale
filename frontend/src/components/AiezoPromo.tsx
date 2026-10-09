@@ -11,7 +11,7 @@ const MESSAGES = [
 export function AiezoPromo({ index, onClose }: { index: number; onClose: () => void }) {
   const m = MESSAGES[index % MESSAGES.length]
   return (
-    <div className="fixed right-4 bottom-4 z-40 w-[340px] glass-card shadow-2xl p-4 border-accent/40">
+    <div className="fixed left-4 bottom-4 z-40 w-[340px] glass-card shadow-2xl p-4 border-accent/40">
       <button className="absolute right-2 top-2 aiezo-btn-ghost !min-h-7 !px-1.5" onClick={onClose} aria-label="Đóng giới thiệu">
         <X className="w-4 h-4" />
       </button>

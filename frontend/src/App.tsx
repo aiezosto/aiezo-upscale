@@ -13,7 +13,7 @@ export default function App({ initial }: { initial: InitInfo }) {
   // Giới thiệu AIEZO: lần mở app thứ 1, 6, 11…; sau lần làm ảnh thứ 2, 5, 8…
   const [promo, setPromo] = useState<number | null>(() => {
     const n = bumpCounter('aiezo_launches')
-    return n % 5 === 1 ? n : null
+    return n % 5 === 1 ? 0 : null  // câu 0: giới thiệu AIEZO
   })
   const [info, setInfo] = useState(initial)
   const [theme, setTheme] = useState<'dark' | 'light'>(initial.settings.theme)
