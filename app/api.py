@@ -21,7 +21,7 @@ from .paths import MODELS_DIR
 from .pipeline import TARGETS, Pipeline, Settings, seedvr2_max_pixels, target_size
 
 log = logging.getLogger("upscale")
-AIEZO_URL = "https://aiezo.netlify.app"
+AIEZO_URL = "https://aiezo.net"
 
 
 class Api:

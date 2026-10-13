@@ -3,7 +3,7 @@
 Ứng dụng desktop Windows **miễn phí, mã nguồn mở**: đưa ảnh vỡ / nhoè vào, xuất ảnh 2K, 4K, 8K đã làm nét.
 AI chạy ngay trên card đồ hoạ NVIDIA của máy, không cần mạng, không tải ảnh lên đâu.
 
-Một sản phẩm của **[AIEZO](https://aiezo.netlify.app)**.
+Một sản phẩm của **[AIEZO](https://aiezo.net)**.
 
 ## Tải về & cài đặt
 
@@ -65,4 +65,4 @@ frontend/             giao diện React + Tailwind (hệ màu AIEZO)
   của tác giả tại github.com/XPixelGroup/HAT). File model không nằm trong kho mã; tải bằng `download_models.py`.
 
 ---
-Ghé **[aiezo.netlify.app](https://aiezo.netlify.app)** để xem thêm các ứng dụng AI của AIEZO.
+Ghé **[aiezo.net](https://aiezo.net)** để xem thêm các ứng dụng AI của AIEZO.

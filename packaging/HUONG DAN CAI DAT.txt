@@ -26,4 +26,4 @@ GỠ CÀI ĐẶT
 - Cài đặt của app nằm ở %APPDATA%\AIEZO UpScale (có thể xoá).
 
 Mã nguồn mở. Góp ý / báo lỗi: trang GitHub của dự án (mục Issues), kèm file %APPDATA%\AIEZO UpScale\upscale.log.
-Một sản phẩm của AIEZO — https://aiezo.netlify.app
+Một sản phẩm của AIEZO — https://aiezo.net

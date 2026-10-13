@@ -51,7 +51,7 @@ export function Header({ tab, setTab, theme, toggleTheme, deviceLabel, gpu, onOp
       </nav>
 
       <div className="flex items-center gap-2 shrink-0">
-        <button onClick={onAiezo} className="aiezo-btn-secondary !min-h-8" title="Mở web AIEZO (aiezo.netlify.app)">
+        <button onClick={onAiezo} className="aiezo-btn-secondary !min-h-8" title="Mở web AIEZO (aiezo.net)">
           <Sparkles className="w-4 h-4 text-accent-strong" /> AIEZO <ExternalLink className="w-3.5 h-3.5 text-muted-text" />
         </button>
         <span

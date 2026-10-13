@@ -24,7 +24,7 @@ export function AiezoPromo({ index, onClose }: { index: number; onClose: () => v
           <p className="font-heading font-semibold text-sm text-primary-text mt-0.5 pr-5">{m.title}</p>
           <p className="text-xs text-secondary-text mt-1">{m.body}</p>
           <button className="aiezo-btn-primary !min-h-8 mt-3" onClick={() => { api().open_aiezo('/'); onClose() }}>
-            Ghé aiezo.netlify.app <ExternalLink className="w-3.5 h-3.5" />
+            Ghé aiezo.net <ExternalLink className="w-3.5 h-3.5" />
           </button>
         </div>
       </div>
